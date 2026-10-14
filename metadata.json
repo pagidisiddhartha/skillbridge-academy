@@ -1,0 +1,6 @@
+{
+  "name": "SkillBridge Academy - Education & Internship Platform",
+  "description": "Professional education and internship management web application featuring hands-on courses, verified internship listings, structured mentorship, practical projects, and verifiable credentials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
