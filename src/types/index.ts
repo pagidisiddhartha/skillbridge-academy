@@ -126,6 +126,17 @@ export interface LessonProgress {
   completedAt?: string;
 }
 
+export interface QuizAttempt {
+  id: string;
+  userId: string;
+  lessonId: string;
+  courseId: string;
+  scorePercent: number;
+  passed: boolean;
+  answers: number[];
+  attemptedAt: string;
+}
+
 export type WorkMode = 'remote' | 'hybrid' | 'onsite';
 export type InternshipStatus = 'published' | 'closed';
 

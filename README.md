@@ -97,6 +97,17 @@ npm run dev
 The application will be live at:
 `http://localhost:3000`
 
+### Netlify Deployment
+When deploying to Netlify:
+- **Build command:** `npm run build`
+- **Publish directory:** `dist`
+- The repository now includes `netlify.toml` and `public/_redirects` to route all SPA paths correctly.
+- **Standalone Client Database:** Netlify is a static frontend hosting platform without a long-running Node.js process. The application automatically detects static hosts and operates a full-featured in-browser database stored in `localStorage`. Sign in, registration, demo role switching, course progress, quiz grading, internship applications, mentor reviews, and certificate verification work out of the box!
+- **Optional External API Backend:** If you host `server.ts` on Render, Railway, Fly.io, or Cloud Run, set the environment variable in your Netlify site settings:
+  ```env
+  VITE_API_URL="https://your-backend-service.railway.app"
+  ```
+
 ---
 
 ## 5. REST API Documentation
